@@ -7,7 +7,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var concat = require('gulp-concat');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
-// var livereload = require('gulp-livereload');
+
 
 /* path to wp custom theme */
 
@@ -50,9 +50,11 @@ gulp.task('less', function() {
         .pipe(reload({ stream: true }));
 });
 
+// concat and compressed js files
 gulp.task('js', function() {
     return gulp.src([
             './node_modules/jquery/dist/jquery.min.js',
+            './node_modules/jquery.cookie/jquery.cookie.js',
             './node_modules/bootstrap-less/bootstrap/js/bootstrap.min.js',
             './js/*.js'
         ])

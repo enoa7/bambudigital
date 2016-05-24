@@ -23,6 +23,7 @@
     "gulp-uglify": "^1.5.3",
     "install": "^0.8.1",
     "jquery": "^2.2.4",
+    "jquery.cookie": "^1.4.1",
     "npm": "^3.9.2"
   }
 }
