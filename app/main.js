@@ -124,14 +124,10 @@ void 0!==c?e&&"set"in e&&void 0!==(d=e.set(a,c,b))?d:a[b]=c:e&&"get"in e&&null!=
 (function ( $ ) {
  
     $.fn.visitCounter = function() {
-	    // Check if the cookie exists
-	     var date = new Date();
-		 var minutes = 1;
-		 date.setTime(date.getTime() + (minutes * 60 * 1000));
 
 	    if ($.cookie('visits') == null) {
 	    	// set value to 1 if it doesnt
-	        var visits = $.cookie('visits', '1', { expires: date });
+	        var visits = $.cookie('visits', '1', { expires: 1 });
 	        console.log(visits);
 	    } else {
 	    	// if its not null...
@@ -141,7 +137,7 @@ void 0!==c?e&&"set"in e&&void 0!==(d=e.set(a,c,b))?d:a[b]=c:e&&"get"in e&&null!=
 	        cookie_value = parseInt($.cookie('visits')) + 1;
 
 	        // display it on the console log
-	        var visits = $.cookie('visits', cookie_value, { expires: date });
+	        var visits = $.cookie('visits', cookie_value, { expires: 1 });
 	        console.log(visits);
 	    }
     };
