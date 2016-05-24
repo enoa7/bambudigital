@@ -18,13 +18,14 @@ gulp.task('browserSync', function() {
 
     var files = [
         '*.html',
+        '*.php',
         './less/*.less',
         './less/**/.less',
         '*.css'
     ];
 
     browserSync.init(files, {
-        proxy: "http://localhost/bambudigital/app/index.html",
+        proxy: "http://localhost/bambudigital/app/index.php",
         notify: 'false'
     });
 });
