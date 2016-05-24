@@ -98,12 +98,28 @@
             <div class="container">
                 <h2 class="title">The Shopping Cart</h2>
                 <div class="shoppingcart-content">
-                    <div class="shoppingcart-content-img">
+                    <div class="shoppingcart-content-img col-xs-12 col-sm-6">
                         <img class="img-responsive" src="images/shopping_cart.jpg" alt="shopping cart">
+                    </div>
+                    <div class="shoppingcart-content-text col-xs-12 col-sm-6">
+                        <p class="lead bold">Some Bullet text here</p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting </p>
+                        <p>Lorem Ipsum has been the industry's standard dummy text ever </p>
+                        <p>When an unknown printer took a galley of type and scrambled </p>
+                        <p>It to make a type specimen book. It has survived not only five centuries</p>
+                        <p>But also the leap into electronic typesetting,</p>
+                        <p>Remaining essentially unchanged. It was popularised </p>
+                        <p>The release of Letraset sheets containing Lorem Ipsum passages</p>
                     </div>
                 </div>
             </div>
         </div>
+        <footer>
+            <hr>
+            <div class="container text-center">
+                <span>Copyright &copy; 2012-2013 cssauthor.com</span>
+            </div>
+        </footer>
     </div>
     <!-- compiled js -->
     <script src="./main.js" type="text/javascript" charset="utf-8" async defer></script>

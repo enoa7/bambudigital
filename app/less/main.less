@@ -58,9 +58,11 @@ html {
     }
     &-item {
         .spacepad();
+
         @media(max-width: 768px) {
             padding-left: 0;
             padding-right: 0;
+            border-bottom: 1px solid #ccc;
         }
         &-img {
             .no-side();
@@ -91,5 +93,21 @@ html {
     }
     &-content {
         .spacepad();
+        color: @primary_color;
+
+        &-text {
+            .lead {
+                @media(max-width: 768px) {
+                    font-size: 2em;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    > .container {
+        padding-top: 3em;
+        padding-bottom: 3em;
     }
 }
