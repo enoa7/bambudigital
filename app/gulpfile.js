@@ -59,6 +59,10 @@ gulp.task('js', function() {
             './js/*.js'
         ])
         .pipe(concat('main.js'))
+        .pipe(rename({
+            basename: 'main',
+            suffix: '.min'
+        }))
         .pipe(gulp.dest('./'))
         .pipe(reload({ stream: true }));
 });
@@ -68,4 +72,16 @@ gulp.task('default', ['less', 'js', 'browserSync'], function() {
     gulp.watch('*.less', {cwd: 'less'}, ['less']);
     gulp.watch('**/*.less', {cwd: 'less'}, ['less']);
     gulp.watch('*.js', {cwd: 'js'}, ['js']);
+});
+
+
+gulp.task('dist', function() {
+    return gulp.src([
+        'images/**/*',
+        'php/*',
+        'index.php',
+        'main.min.js',
+        'main.min.css',
+    ], { base: './'})
+    .pipe(gulp.dest('dist/'));
 });
