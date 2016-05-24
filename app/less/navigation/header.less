@@ -1,22 +1,33 @@
 // HEADER
 
-[class^='col-'] {
-	padding-left: 15px;
-	padding-right: 15px;
-}
+* {
 
-.site-logo {
-	// .col-xs-4();
-	// float: left;
+}
+//remove default padding
+.page-header {
+	padding-bottom: 0;
+	margin-bottom: 0;
 }
 
 .site-menu {
-	padding-top: 1em;
-	padding-bottom: 1em;
 
-	&-item {
-		float: left;
-		padding-left: 15px;
-		padding-right: 15px;
-	}
+    &-item {
+    	float: left;
+        a {
+            padding: 2em 1em;
+            display: block;
+            color: @primary_color;
+            font-size: 1.1em;
+            &:hover {
+            	text-decoration: none !important;
+            	border-bottom: 2px solid @secondary_color;
+            }
+        }
+    }
+
+    &.mobile {
+    	padding-bottom: 15px;
+    }
 }
+
+

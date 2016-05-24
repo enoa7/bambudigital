@@ -1,6 +1,23 @@
 // main 
-
 // import
 @import 'node_modules/bootstrap-less/bootstrap/bootstrap.less';
 @import 'variable_site/color';
 @import 'navigation/header';
+.spacepad {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.mainbanner {
+    background: url('images/mobile_bg.jpg');
+}
+
+.highlight {
+    &-item {
+    	.spacepad();
+        &-text {
+            text-align: center;
+            .spacepad();
+        }
+    }
+}

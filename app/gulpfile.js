@@ -24,7 +24,7 @@ gulp.task('browserSync', function() {
     ];
 
     browserSync.init(files, {
-        proxy: "http://localhost:8888/bambudigital/app/index.html",
+        proxy: "http://localhost/bambudigital/app/index.html",
         notify: 'false'
     });
 });
