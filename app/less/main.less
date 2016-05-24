@@ -1,12 +1,23 @@
 // main 
 // import
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
 @import 'node_modules/bootstrap-less/bootstrap/bootstrap.less';
 @import 'mixin/mixin';
 @import 'variable_site/color';
 @import 'navigation/header';
+body,
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
 .spacepad {
     padding-top: 15px;
     padding-bottom: 15px;
+}
+
+.no-side {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 
@@ -39,22 +50,46 @@
 }
 
 .highlight {
-    .spacepad();
+    padding-top: 1em;
+    padding-bottom: 1em;
+    @media(min-width: 768px) {
+        padding-top: 5em;
+        padding-bottom: 5em;
+    }
     &-item {
         .spacepad();
+        @media(max-width: 768px) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        &-img {
+            .no-side();
+        }
         &-text {
             text-align: center;
             .spacepad();
             &-title {
                 .h3();
                 color: @secondary_color;
+                @media(max-width: 768px) {
+                    margin-top: 0;
+                    .no-side();
+                }
             }
         }
     }
 }
 
-.shopping-cart {
+.shoppingcart {
     .title {
         color: @primary_color;
+        font-size: 3em;
+        .spacepad();
+        @media(max-width: 768px) {
+            text-align: center;
+        }
+    }
+    &-content {
+        .spacepad();
     }
 }
