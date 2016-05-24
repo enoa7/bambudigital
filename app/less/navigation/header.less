@@ -3,13 +3,18 @@
 .page-header {
     padding-bottom: 0;
     margin-bottom: 0;
+    border-bottom: none;
 }
+
+
+/** Header Styling **/
 
 .site-menu {
     &-item {
         float: left;
+        max-height: 2em;
         a {
-            padding: 2em 1em;
+            padding: 1.1em 1em;
             display: block;
             color: @primary_color;
             font-size: 1.1em;
@@ -17,7 +22,6 @@
             &:hover {
                 text-decoration: none !important;
                 border-bottom: 0.2em solid @secondary_color;
-                padding: 1.8em 1em;
             }
         }
     }
@@ -25,3 +29,6 @@
         padding-bottom: 15px;
     }
 }
+
+
+

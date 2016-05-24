@@ -9,8 +9,20 @@
     padding-bottom: 15px;
 }
 
+/** Page Content **/
+
 .mainbanner {
-    background: url('images/mobile_bg.jpg');
+    margin-top: 15px;
+    background: url('images/desktop_bg.jpg') no-repeat;
+    background-size: cover;
+
+    &-content {
+        color: #fff;
+
+        .lead {
+            font-size: 3em;
+        }
+    }
 }
 
 .highlight {

@@ -49,8 +49,18 @@
     </header>
     <div class="page-content">
         <div class="mainbanner">
-            <div class="mainbanner-img"></div>
-            <div class="mainbanner-text"></div>
+            <div class="container spacepad">
+                <div class="mainbanner-img col-xs-6">
+                    <img class="img-responsive" src="images/mainbanner-img.png" alt="iphone">
+                </div>
+                <div class="mainbanner-content col-xs-6">
+                    <div class="mainbanner-content-text">
+                        <p class="lead">Lorem Ipsum</p>
+                        <p>Lorem ipsum dolor sit amet</p>
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="highlight">
             <div class="container">
