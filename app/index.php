@@ -50,14 +50,15 @@
     <div class="page-content">
         <div class="mainbanner">
             <div class="container spacepad">
-                <div class="mainbanner-img col-xs-6">
+                <div class="mainbanner-img col-xs-5">
                     <img class="img-responsive" src="images/mainbanner-img.png" alt="iphone">
                 </div>
-                <div class="mainbanner-content col-xs-6">
+                <div class="mainbanner-content col-xs-7">
                     <div class="mainbanner-content-text">
-                        <p class="lead">Lorem Ipsum</p>
-                        <p>Lorem ipsum dolor sit amet</p>
-                        <p>Lorem ipsum dolor sit amet</p>
+                        <p class="lead">Lorem Ipsum is Simply</p>
+                        <p>dummy text of the</p>
+                        <p>printing & typesetting </p>
+                        <img class="img-responsive sign-up" src="images/mainbanner-button.png" alt="sign up">
                     </div>
                 </div>
             </div>
@@ -68,20 +69,34 @@
                     <div class="highlight-item-img">
                         <img class="img-responsive center-block" src="images/highlight_1.jpg" alt="highlight 1">
                     </div>
-                    <div class="highlight-item-text col-xs-12">lalalalaalalallalalalla</div>
+                    <div class="highlight-item-text col-xs-12">
+                        <div class="highlight-item-text-title">Contrary to popular</div>
+                        <div class="highlight-item-text-desc">Lorem Ipsum is not simply random text. It has roots in a piece </div>
+                    </div>
                 </div>
                 <div class="highlight-item col-xs-12 col-sm-4">
                     <div class="highlight-item-img">
                         <img class="img-responsive center-block" src="images/highlight_2.jpg" alt="highlight 1">
                     </div>
-                    <div class="highlight-item-text col-xs-12">lalalalaalalallalalalla</div>
+                    <div class="highlight-item-text col-xs-12">
+                        <div class="highlight-item-text-title">Contrary to popular</div>
+                        <div class="highlight-item-text-desc">Lorem Ipsum is not simply random text. It has roots in a piece </div>
+                    </div>
                 </div>
                 <div class="highlight-item col-xs-12 col-sm-4">
                     <div class="highlight-item-img">
                         <img class="img-responsive center-block" src="images/highlight_3.jpg" alt="highlight 1">
                     </div>
-                    <div class="highlight-item-text col-xs-12">lalalalaalalallalalalla</div>
+                    <div class="highlight-item-text col-xs-12">
+                        <div class="highlight-item-text-title">Contrary to popular</div>
+                        <div class="highlight-item-text-desc">Lorem Ipsum is not simply random text. It has roots in a piece </div>
+                    </div>
                 </div>
+            </div>
+        </div>
+        <div class="shopping-cart">
+            <div class="container">
+                <h2 class="title">The Shopping Cart</h2>
             </div>
         </div>
     </div>

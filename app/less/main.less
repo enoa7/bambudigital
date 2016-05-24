@@ -9,28 +9,52 @@
     padding-bottom: 15px;
 }
 
+
 /** Page Content **/
 
 .mainbanner {
     margin-top: 15px;
     background: url('images/desktop_bg.jpg') no-repeat;
     background-size: cover;
-
     &-content {
         color: #fff;
-
-        .lead {
-            font-size: 3em;
+        position: relative;
+        @media(min-width: 768px) {
+            top: 10em;
+        }
+        .sign-up {
+            cursor: pointer;
+        }
+        p {
+            margin-bottom: 1em;
+            @media(min-width: 768px) {
+                font-size: 1.5em;
+                &.lead {
+                    font-size: 4em;
+                    line-height: 1;
+                }
+            }
         }
     }
 }
 
 .highlight {
+    .spacepad();
     &-item {
-    	.spacepad();
+        .spacepad();
         &-text {
             text-align: center;
             .spacepad();
+            &-title {
+                .h3();
+                color: @secondary_color;
+            }
         }
+    }
+}
+
+.shopping-cart {
+    .title {
+        color: @primary_color;
     }
 }
