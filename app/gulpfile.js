@@ -83,5 +83,5 @@ gulp.task('dist', function() {
         'main.min.js',
         'main.min.css',
     ], { base: './'})
-    .pipe(gulp.dest('dist/'));
+    .pipe(gulp.dest('../dist'));
 });
